@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
+        <title> Tab Text editor</title>
+    </head>
+    
+  <body>
+   <div class="container">
+       <h1>Tab EDITOR</h1>
+    <div id="editor">
+        <p>Type your content here</p>
+    </div>
+   </div>
+    
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</body>
+
+</html>
